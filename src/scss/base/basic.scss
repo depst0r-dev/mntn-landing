@@ -1,0 +1,105 @@
+@use '/src/scss/base/variables.scss' as *;
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::selection {
+    background-color: rgba(255, 238, 0, 0.527) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+    margin: 0 !important;
+}
+
+ol[role="list"],
+ul[role="list"] {
+    list-style: none;
+    padding-inline: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+}
+
+body {
+    background: $primary-dark
+}
+
+.main-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+    background: $primary-dark
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero__bg {
+    position: relative;
+    width: 100%;
+}
+
+.parallax-layer {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.layer-bg {
+    position: relative;
+}
+
+.layer-mountains {
+    position: relative;
+    margin-top: -20%;
+}
+
+.layer-foreground {
+    position: relative;
+    margin-top: -37.5%;
+}
